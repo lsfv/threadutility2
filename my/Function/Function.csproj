@@ -73,6 +73,7 @@
     <Compile Include="IncFile.cs" />
     <Compile Include="IncJason.cs" />
     <Compile Include="IncJs.cs" />
+    <Compile Include="IncRelection.cs" />
     <Compile Include="IncUpFile.cs" />
     <Compile Include="IncUtils.cs" />
     <Compile Include="IncWeb.cs" />
