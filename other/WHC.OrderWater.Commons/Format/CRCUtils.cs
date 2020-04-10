@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// CRC–£—È∏®÷˙¿‡

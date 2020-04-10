@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 转换人民币大小金额辅助类

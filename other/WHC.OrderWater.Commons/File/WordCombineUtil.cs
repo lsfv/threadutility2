@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Office.Interop.Word;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 简单的Word操作对象

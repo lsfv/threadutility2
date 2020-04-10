@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Soap;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// ĞòÁĞºÅ²Ù×÷¸¨ÖúÀà

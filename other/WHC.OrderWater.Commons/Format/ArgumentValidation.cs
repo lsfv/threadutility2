@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 参数验证的通用验证程序。(来自Enterprise Library2005的Common项目)

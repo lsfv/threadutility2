@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     //获取中文字首字拼写,随机发生器，按指定概率随机执行操作
     public sealed class Util

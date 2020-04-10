@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Data.OleDb;
 using System.Data;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// Access数据库文件操作辅助类

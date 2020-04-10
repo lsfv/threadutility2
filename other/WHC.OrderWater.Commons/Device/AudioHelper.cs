@@ -5,7 +5,7 @@ using System.Media;
 using System.Security;
 using System.Security.Permissions;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 声音播放辅助类

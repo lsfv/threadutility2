@@ -5,7 +5,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Reflection;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 常用的文件操作辅助类FileUtil
@@ -85,49 +85,7 @@ namespace WHC.OrderWater.Commons
             return stream;
         }
 
-        /// <summary>
-        /// 将文件读取到缓冲区中
-        /// </summary>
-        /// <param name="filePath">文件的绝对路径</param>
-        public static byte[] FileToBytes(string filePath)
-        {
-            //获取文件的大小
-            int fileSize = GetFileSize(filePath);
-
-            //创建一个临时缓冲区
-            byte[] buffer = new byte[fileSize];
-
-            //创建一个文件流
-            FileInfo fi = new FileInfo(filePath);
-            FileStream fs = fi.Open(FileMode.Open);
-
-            try
-            {
-                //将文件流读入缓冲区
-                fs.Read(buffer, 0, fileSize);
-
-                return buffer;
-            }
-            catch (IOException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                //关闭文件流
-                fs.Close();
-            }
-        }
-
-        /// <summary>
-        /// 将文件读取到字符串中
-        /// </summary>
-        /// <param name="filePath">文件的绝对路径</param>
-        public static string FileToString(string filePath)
-        {
-            return FileToString(filePath, Encoding.Default);
-        }
-
+   
         /// <summary>
         /// 将文件读取到字符串中
         /// </summary>
@@ -229,46 +187,7 @@ namespace WHC.OrderWater.Commons
 
         #region 文件操作
 
-        #region 获取一个文件的长度
-        /// <summary>
-        /// 获取一个文件的长度,单位为Byte
-        /// </summary>
-        /// <param name="filePath">文件的绝对路径</param>
-        public static int GetFileSize(string filePath)
-        {
-            //创建一个文件对象
-            FileInfo fi = new FileInfo(filePath);
 
-            //获取文件的大小
-            return (int)fi.Length;
-        }
-
-        /// <summary>
-        /// 获取一个文件的长度,单位为KB
-        /// </summary>
-        /// <param name="filePath">文件的路径</param>
-        public static double GetFileSizeKB(string filePath)
-        {
-            //创建一个文件对象
-            FileInfo fi = new FileInfo(filePath);
-
-            //获取文件的大小
-            return ConvertHelper.ToDouble(Convert.ToDouble(fi.Length) / 1024, 1);
-        }
-
-        /// <summary>
-        /// 获取一个文件的长度,单位为MB
-        /// </summary>
-        /// <param name="filePath">文件的路径</param>
-        public static double GetFileSizeMB(string filePath)
-        {
-            //创建一个文件对象
-            FileInfo fi = new FileInfo(filePath);
-
-            //获取文件的大小
-            return ConvertHelper.ToDouble(Convert.ToDouble(fi.Length) / 1024 / 1024, 1);
-        }
-        #endregion
 
         /// <summary>
         /// 向文本文件中写入内容
@@ -281,14 +200,14 @@ namespace WHC.OrderWater.Commons
             File.WriteAllText(filePath, content, Encoding.Default);
         }
 
-        /// <summary>
-        /// 向文本文件的尾部追加内容
-        /// </summary>
-        /// <param name="filePath">文件的绝对路径</param>
-        /// <param name="content">写入的内容</param>
-        public static void AppendText(string filePath, string content)
+        public static void AppendTextNoLine(string filePath, string content, Encoding encoding)
         {
-            File.AppendAllText(filePath, content, Encoding.Default);
+            File.AppendAllText(filePath, content, encoding);
+        }
+
+        public static void AppendTextWithNewLine(string filePath, string content, Encoding encoding)
+        {
+            File.AppendAllText(filePath, content + "\r\n", encoding);
         }
 
         /// <summary>
@@ -343,7 +262,11 @@ namespace WHC.OrderWater.Commons
                 //如果文件不存在则创建该文件
                 if (!IsExistFile(filePath))
                 {
-                    File.Create(filePath);
+                    if (!Directory.Exists(Path.GetDirectoryName(filePath)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                        File.Create(filePath);
+                    }
                 }
             }
             catch (IOException ex)
@@ -364,12 +287,17 @@ namespace WHC.OrderWater.Commons
                 //如果文件不存在则创建该文件
                 if (!IsExistFile(filePath))
                 {
-                    //创建文件
-                    using (FileStream fs = File.Create(filePath))
+                    if (!Directory.Exists(Path.GetDirectoryName(filePath)))
                     {
-                        //写入二进制流
-                        fs.Write(buffer, 0, buffer.Length);
+                        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                        //创建文件
+                        using (FileStream fs = File.Create(filePath))
+                        {
 
+                            //写入二进制流
+                            fs.Write(buffer, 0, buffer.Length);
+
+                        }
                     }
                 }
             }

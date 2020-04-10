@@ -5,7 +5,7 @@ using Microsoft.Win32;
 using System;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// HardDiskVal 的摘要说明。

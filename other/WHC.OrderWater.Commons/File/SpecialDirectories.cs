@@ -6,7 +6,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Security;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 获取一个对象，它提供用于访问经常引用的目录的属性。

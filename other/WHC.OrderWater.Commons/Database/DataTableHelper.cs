@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Data;
 using System.Collections;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// DataTable帮助类

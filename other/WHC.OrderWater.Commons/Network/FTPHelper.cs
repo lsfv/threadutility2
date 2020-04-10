@@ -7,7 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Collections;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibraryS
 {
     /// <summary>
     /// FTP²Ù×÷¸¨ÖúÀà

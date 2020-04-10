@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.IO.Compression;
 using System.Web;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     public class HttpHelper
     {

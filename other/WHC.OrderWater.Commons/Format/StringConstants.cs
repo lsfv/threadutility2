@@ -1,4 +1,4 @@
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 常用的字符串常量

@@ -11,13 +11,6 @@ namespace Function
         public static List<string> GetFieldsName(Type objType)
         {
             List<string> res = new List<string>();
-            System.Reflection.PropertyInfo[] ps = objType.GetProperties();
-            foreach (PropertyInfo i in ps)
-            {
-
-                //object obj = i.GetValue(contract, null);
-                //string name = i.Name;
-            }
             return res;
         }
 

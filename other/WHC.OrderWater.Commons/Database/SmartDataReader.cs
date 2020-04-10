@@ -1,7 +1,7 @@
 using System;
 using System.Data;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 转换IDataReader字段对象的格式辅助类

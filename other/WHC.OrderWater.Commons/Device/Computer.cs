@@ -5,7 +5,7 @@ using System.Management;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 电脑信息

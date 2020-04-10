@@ -4,7 +4,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// byte字节数组操作辅助类

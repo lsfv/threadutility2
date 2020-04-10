@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 using System.Xml;
 using System.Data;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
      /// <summary>
     /// XML操作类

@@ -4,10 +4,19 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace Common
+namespace Function
 {
     public abstract class incUnitTest
     {
+        public  class Book
+        {
+            public int BookID;
+            public string Product;
+            public DateTime Date;
+            public string Description;
+        }
+
+
         public static void SetupColumm(DataTable databable_books)
         {
             DataColumn tempDataColumn = null;

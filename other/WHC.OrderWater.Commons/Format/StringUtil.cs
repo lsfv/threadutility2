@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.VisualBasic;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// ¼òÒªËµÃ÷TextHelper¡£

@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
 	/// <summary>
 	/// DatabaseInfo 的摘要说明。

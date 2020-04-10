@@ -7,7 +7,7 @@ using System.Data.Common;
 using System.Data;
 using System.Text.RegularExpressions;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 查询条件组合辅助类

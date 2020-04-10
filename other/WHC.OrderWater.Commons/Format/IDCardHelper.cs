@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Text.RegularExpressions;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 身份证操作辅助类

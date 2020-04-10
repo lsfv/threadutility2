@@ -5,7 +5,7 @@ using System.IO;
 using System.Data;
 using System.Data.OleDb;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// CSV文件和DataTable对象转换辅助类

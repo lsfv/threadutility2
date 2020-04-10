@@ -4,7 +4,7 @@ using System.Text;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// INI文件操作辅助类

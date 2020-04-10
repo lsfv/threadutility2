@@ -2,7 +2,7 @@ using System;
 using System.Data;
 using System.Data.Common;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary> 
     /// 根据各种不同数据库生成不同分页语句的辅助类 PagerHelper

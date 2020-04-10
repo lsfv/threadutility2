@@ -9,7 +9,7 @@ using System;
 using System.Runtime.InteropServices;
 
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>提供用于操作剪贴板的方法.</summary>
     [EditorBrowsable(EditorBrowsableState.Never)]

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.IO;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibraryS
 {
     /// <summary>
     /// Cookie操作辅助类

@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     ///<summary>
     ///打开、保存文件对话框操作辅助类

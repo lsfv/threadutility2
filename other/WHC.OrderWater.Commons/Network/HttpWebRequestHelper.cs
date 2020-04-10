@@ -110,7 +110,6 @@ namespace WHC.OrderWater.Commons
             }
 
             return html;
-
         }
 
         /// <summary>

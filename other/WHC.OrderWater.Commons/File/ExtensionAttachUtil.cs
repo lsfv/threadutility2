@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Win32;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     public class ExtensionAttachUtil
     {

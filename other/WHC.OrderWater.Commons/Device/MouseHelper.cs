@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Security.Permissions;
 using System.Windows.Forms;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 模拟鼠标点击

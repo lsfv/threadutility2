@@ -8,7 +8,7 @@ using System.Security.AccessControl;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// OSql命令操作函数（可用于安装程序的时候数据库脚本执行）

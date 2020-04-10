@@ -5,7 +5,7 @@ using System.Reflection;
 using System.ComponentModel;
 using System.Collections;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 枚举操作公共类

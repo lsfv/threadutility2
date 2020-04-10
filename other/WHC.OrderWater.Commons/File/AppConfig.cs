@@ -2,7 +2,7 @@ using System.Xml;
 using System.IO;
 using System;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 用于获取或设置Web.config/*.exe.config中节点数据的辅助类

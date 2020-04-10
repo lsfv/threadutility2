@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Xml;
 using System.Data.Common;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibrary
 {
     /// <summary>
     /// 常用的Access数据库Sql操作辅助类库

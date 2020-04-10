@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Net;
 
-namespace WHC.OrderWater.Commons
+namespace LSLibraryS
 {
     /// <summary>
     /// IE代理设置辅助类
