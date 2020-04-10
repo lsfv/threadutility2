@@ -11,9 +11,9 @@ using System;
 [assembly: AssemblyTitle("Common")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("华微软件")]
+[assembly: AssemblyCompany("linson")]
 [assembly: AssemblyProduct("Common")]
-[assembly: AssemblyCopyright("版权所有 (C) 华微软件 2007")]
+[assembly: AssemblyCopyright("linson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

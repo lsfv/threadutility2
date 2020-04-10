@@ -7,15 +7,15 @@
     <ProjectGuid>{53AC195E-DCFF-47C4-BC02-7E0241FF520C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WHC.OrderWater.Commons</RootNamespace>
-    <AssemblyName>WHC.OrderWater.Commons</AssemblyName>
+    <RootNamespace>LSLibrary</RootNamespace>
+    <AssemblyName>LSLibrary</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <PublishUrl>http://localhost/WHC.DotNetVisio.Commons/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -30,6 +30,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Debug\WHC.OrderWater.Commons.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\LSLibrary.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,7 +51,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Release\WHC.OrderWater.Commons.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\LSLibrary.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -63,6 +64,9 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj110, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\JetAccessUtil.cs" />
@@ -73,6 +77,7 @@
     <Compile Include="Database\SmartDataReader.cs" />
     <Compile Include="Database\SqlScriptHelper.cs" />
     <Compile Include="File\FileUtil.cs" />
+    <Compile Include="File\OpenXml.cs" />
     <Compile Include="Format\ArgumentValidation.cs" />
     <Compile Include="Device\AudioHelper.cs" />
     <Compile Include="Format\ByteImageConvertor.cs" />
